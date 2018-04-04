@@ -1,5 +1,4 @@
 var config = require("./.env").config;
-// console.log(config);
 //setting variables for linking and using information from various files and for various API calls.
 var fs = require("fs");
 var keys = require("./keys.js");
@@ -8,7 +7,6 @@ var inquirer = require("inquirer");
 var Twitter = require('twitter');
 var Spotify = require("node-spotify-api");
 var pick = require('object.pick');
-// console.log(config.SPOTIFY_ID);
 
 var rogueMyBidding = function () {
     fs.readFile('random.txt', 'utf8', function (err, data) {

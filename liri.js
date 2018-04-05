@@ -35,7 +35,7 @@ var rogueMovie = function (movieName) {
             //I thought I could use npm object.pick to grab the tomato rating from OMDB. It didn't work. 
             // pick(movieData.Rating[1]);
             // console.log(movieData.Rating[1]);
-            console.log('Rotten Tomato Score: ' + movieData.tomato_rating);
+            console.log('Rotten Tomato Score: ' + movieData.Ratings[1].Value);
         }
     });
 }
